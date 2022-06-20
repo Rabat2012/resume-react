@@ -14,12 +14,14 @@ const Skills2 = () => {
         <p className="skills-2__content__text">Изобретательность</p>
         <div className="skills-2__content__third-procent"></div>
         </div>
+        
+        <div className="skills-2__portrait">
+          {/* <div data-aos="zoom-out"> */}
+            <img src="./images/portrait.jpg" alt="Elon_Musk" />
+            {/* </div> */}
         </div>
-        <div className="skills-2__portrait"><div data-aos="zoom-out">
-            <img src="./images/portrait.jpg" alt="Elon_Musk" /></div>
-        </div>
+     </div>
     </div>
-    // </div>
   );
 };
 
