@@ -1,38 +1,265 @@
-.App {
+/* all start */
+* {
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
+}
+
+body {
+  width: 100%;
+}
+/* all end */
+
+/* first_div start */
+.first_div {
+  background-color: #EEEFF1;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__name {
+  font-family: 'Water Brush', cursive;
+  font-size: 60px;
+}
+
+.header__nav a {
+  padding-right: 35px;
+  text-decoration: none;
+}
+/* first_div end */
+
+/* second_div start */
+.about {
+  display: flex;
+  justify-content: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.about p {
+  padding-top: 50px;
+  width: 70%;
+  text-align: center;
+}
+/* second_div end */
+
+/* third_div start */
+.skills {
+  background-color: #34547A;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  flex-direction: column;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.skills p {
+  color: #FFFFFF;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.skills__title {
+  padding-top: 50px;
+  text-align: center;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.skills__content {
+  padding: 25px 100px 50px;
+}
+/* third_div end */
+
+/* fourth_div start */
+.skills-2 {
+  margin-top: 102px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.skills ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 45px;
+}
+
+.skills-2__content__title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+
+}
+/* fourth_div end */
+
+/* fifth_div start */
+.work__content__description {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+
+
+}
+
+.skills-2__content__first-procent {
+  width: 445px;
+  height: 4px;
+  background-image: linear-gradient(to right, #34547A 70%, #C4C4C4 30%);
+}
+
+.skills-2__content__second-procent {
+  width: 445px;
+  height: 4px;
+  background-image: linear-gradient(to right, #34547A 70%, #C4C4C4 30%);
+}
+
+.skills-2__content__third-procent {
+  width: 445px;
+  height: 4px;
+  background-image: linear-gradient(to right, #34547A 70%, #C4C4C4 30%);
+}
+/* fifth_div end */
+
+/* sixth_div start */
+.work {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  background-color: #EEEFF1;
+  margin-top: 50px;
+  padding: 100px;
+}
+
+.work__content p {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.work__content__title {
+  font-size: 32px;
+  line-height: 38px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.work__video {
+  display: flex;
+  justify-content: center;
+}
+
+.work__video iframe {
+  padding-top: 100px;
+}
+/* sixth_div end */
+
+/* footer start */
+.footer {
+  background-color: #34547A;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 50px;
+}
+
+.footer__copyright p {
+  color: #FFFFFF;
+}
+/* footer end */
+
+/* media requests start */
+@media all and (max-width: 740px) {
+  body {
+      width: 770px;
   }
 }
+
+@media all and (max-width: 350px) {
+
+  .header {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .header__nav {
+      flex-direction: column;
+      text-align: center;
+      padding-bottom: 30px;
+  }
+
+  .header__nav a {
+      font-size: 40px;
+      line-height: 40px;
+      padding: 15px;
+  }
+
+  .about p {
+      font-size: 30px;
+      line-height: 30px;
+  }
+
+  .skills__title {
+      font-size: 40px;
+      line-height: 40px;
+  }
+
+  .skills__content {
+      font-size: 30px;
+      line-height: 30px;
+  }
+
+  .skills-2 {
+     flex-direction: column;
+     align-items: center;
+  }
+
+  .skills-2__content__title {
+      font-size: 45px;
+      line-height: 45px;
+  }
+
+  .skills-2__content__text {
+      font-size: 30px;
+      line-height: 30px;
+  }
+
+  .skills-2__portrait img {
+      margin-top: 40px;
+      width: 500px;
+  }
+
+  .work__content__description {
+      flex-direction: column;
+      align-items: center;
+
+  }
+
+  .work__content__title {
+      font-size: 45px;
+      line-height: 45px;
+  }
+
+  .work__content__description li {
+      padding-bottom: 15px;
+  }
+
+  .work__content__description a {
+      font-size: 30px;
+      line-height: 30px;
+  }
+
+  .footer {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer__copyright p {
+      font-size: 30px;
+      line-height: 30px;
+  }
+
+  .footer__social-media img {
+      width: 100px;
+  }
+}
+/* media requests end */
